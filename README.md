@@ -6,7 +6,7 @@ typo or bad grammer.
 
 Hope you enjoy it.
 
-##History
+## History
 As a tradition in learning programming language I should start with the history of the C programming language.
 For me it's a little boring so i put a link to learn about the histor.[History](https://en.wikipedia.org/wiki/C_(programming_language))
 
