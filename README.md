@@ -29,4 +29,4 @@ the code shoud be inside the `{}`.then we want to print a formatted message the 
 we call **\\** as an **escape character**.You can find more examples in this [link](https://en.wikipedia.org/wiki/Escape_character).
 **Don't forget to put `;` at the end of the line.We want to say that the programm runs successfully, so we `return 0`.`0` means program runs seccessfully.
 
-![Hello World](https://uupload.ir/files/gv2k_hello_world.png)
+<img src="https://uupload.ir/files/gv2k_hello_world.png" alt="hello world" width="300"/>
