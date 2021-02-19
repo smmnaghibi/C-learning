@@ -31,7 +31,8 @@ we call **\\** as an **escape character**.You can find more examples in this [li
 
 What about if we want to get input fromt user?`scanf` funcion is the solution.First we should define a variable.
 In this example we need an integer variable, so we use ```int inp;```.We have more variable type such as float,string,boolean,etc.[more informaition](https://en.wikipedia.org/wiki/C_data_types).
-Here we define a variable called inp which is integer.
+also you aren't able to use every name for variable name.We call them **Keywords or reserved keys**.[more informaition](https://en.wikipedia.org/wiki/C_(programming_language))
+.Here we define a variable called inp which is integer.
 Now lets get the user input.By using ```scanf("%d",&inp)``` you can get input from user.
 inside the `scanf` function you should put two value,first we need **digit**,so we use `%d`.then we need to store the input in specefic variable.We can do this by `&inp`.
 Here we can print the the input.```printf("Your number is : %d",inp)```.Again we use `%d` to show we want digit(number) then use `,` and put the variable want to show.
