@@ -5,13 +5,15 @@ typo or bad grammer.
 
 Hope you enjoy it.
 ## History
+### Session 0
 As a tradition in learning programming language I should start with the history of the C programming language.
 For me it's a little boring so i put a link to learn about the histor.[History](https://en.wikipedia.org/wiki/C_(programming_language))
 
 For writing code you need IDE to write code and compile it to see the out put. You can download and install any IDE which is better for your system and OS.
 Here is the link to see the IDE comparison for C programmin.[IDE comparison](https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments#C/C++)
 
-## The first step for coding
+## printf and scanf function(Input and Output)
+### Session 1
 For the begining of our journey, let's start C programmig with write the `Hello World` project.
 ```C
 #include <stdio.h>
@@ -66,6 +68,43 @@ int main()
 
     int division = num1 / num2;
     printf("\n%d / %d = %d",num1,num2,division);
+    return 0;
+}
+```
+## Conditional Statment(if and else)
+### Session 2
+One of the most important part of programming is conditional statement.You can define a condition to do sth only when the condition is True by using `if`.
+When you want run sth when the condtion is False You can use `else` then write the body of else.using else sometimes is optional.
+Here is the synatax:
+```
+if (condition)
+{
+    body if the condition is True
+}
+else
+{
+    body if the condition is False
+}
+```
+**Recap : **the code inside the if only execute when the condition is True,otherwise the code inside the else execute.
+
+E.g. Odd or Even this is a problem:
+```C
+#include <stdio.h>
+
+int main()
+{
+    int inp;
+    printf("Please enter a number : ");
+    scanf("%d",&inp);
+
+    if (inp % 2 == 0){
+        printf("%d is even",inp);
+    }
+    else{
+        printf("%d is odd",inp);
+    }
+
     return 0;
 }
 ```
