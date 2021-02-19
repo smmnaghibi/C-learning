@@ -14,8 +14,9 @@ For me it's a little boring so i put a link to learn about the histor.[History](
 For writing code you need IDE to write code and compile it to see the out put. You can download and install any IDE which is better for your system and OS.
 Here is the link to see the IDE comparison for C programmin.[IDE comparison](https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments#C/C++)
 
-## printf and scanf function(Input and Output)
+## Input and Output
 ### Session 1
+#### `printf` and `scanf`
 For the begining of our journey, let's start C programmig with write the `Hello World` project.
 ```C
 #include <stdio.h>
@@ -73,8 +74,9 @@ int main()
     return 0;
 }
 ```
-## Conditional Statment(if and else)
+## Conditional and Loop Statment(`if`,`else`,`while`)
 ### Session 2
+#### `if` and `else`
 One of the most important part of programming is conditional statement.You can define a condition to do sth only when the condition is True by using `if`.
 When you want run sth when the condtion is False You can use `else` then write the body of else.using else sometimes is optional.
 Here is the synatax:
@@ -129,6 +131,60 @@ else if (condition 4){
 else{
 }
 ```
+#### `while`
+Sometime we want to execute a piece of code repetitively untile thie situation or the condition become True, then we use `while`.
+We use `while` when we don't know how many times we want to execute the code.Syntax:
+
+```
+while (condition)
+{
+    the body execute forever until the condition is True,
+    it means if the condition become True,it will stop excuting the code inside the while
+}
+```
+> Be careful not to get stuck in infinite loop ;)
+
+E.g. factorial:
+```C
+#include <stdio.h>
+
+int main() //e.g. 5 factorial = 5! = 5 x 4 x 3 x 2 x 1
+{
+    int inp;
+    printf("Please enter a number : ");
+    scanf("%d",&inp);
+    int multiplication = 1;
+    while (inp > 1){
+        multiplication *= inp;
+        inp -= 1; // or we can use inp-- both of them means inp = inp - 1
+        // the line above updating the program
+    }
+    printf("The answer is %d",multiplication);
+    return 0;
+}
+```
+Here is another example with more details in it.
+```C
+#include <stdio.h>
+
+int main()
+{
+    int inp, addition = 0, counter = 0;
+    while (1) // By put 1 in condition, the loop become infinite loop
+    {
+        printf("\nPlease enter a number : ");
+        scanf("%d",&inp);
+        if (inp == -1 ) break; // if we input -1 the program and loop will finish and print the result
+        addition += inp;
+        counter++;
+    }
+    float m = (float )addition / counter; // because int / int is int but we want a float as a result, we assign the addition as float
+    printf("\nThe mean of the numbers is %0.2f\n",m); // %0.2f means we just want two numbers after dot
+    return 0;
+}
+```
+
+
 
 ## Appendix
 - [Type of error](https://www.javatpoint.com/programming-errors-in-c)
