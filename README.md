@@ -36,11 +36,11 @@ inside the `scanf` function you should put two value,first we need **digit**,so 
 Here we can print the the input.```printf("Your number is : %d",inp)```.Again we use `%d` to show we want digit(number) then use `,` and put the variable want to show.
 
 <img src="https://uupload.ir/files/voy1_code.png" alt="scanf" width="300"/>
-<img src="https://uupload.ir/files/54dm_res.png" alt="scanf-res" width="300" height="140"/>
+<img src="https://uupload.ir/files/54dm_res.png" alt="scanf-res" width="300"/>
 
 Lets create a project to get two number from user and return the **addition(+),subtraction(-),multiplication(x),division(/)**.
 Before dive into code,in C language we use `//` to write comment.comments are a useful tool to write some explanation about the code or just one line of the code.Remember compiler ignore all the comment,and don't run any thing that start with `//`.So be free to wirte the comment in your code.
-P.S. for multiplication instead of using letter `x` use `*`
+P.S. for multiplication instead of using letter `x` use `*`.
 ```
 #include <stdio.h>
 
