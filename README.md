@@ -30,7 +30,8 @@ we call **\\** as an **escape character**.You can find more examples in this [li
 <img src="https://uupload.ir/files/gv2k_hello_world.png" alt="hello world" width="300"/>
 
 What about if we want to get input fromt user?`scanf` funcion is the solution.First we should define a variable.
-In this example we need an integer variable, so we use ```int inp;```.Here we define a variable called inp which is integer.
+In this example we need an integer variable, so we use ```int inp;```.We have more variable type such as float,string,boolean,etc.[more informaition](https://en.wikipedia.org/wiki/C_data_types).
+Here we define a variable called inp which is integer.
 Now lets get the user input.By using ```scanf("%d",&inp)``` you can get input from user.
 inside the `scanf` function you should put two value,first we need **digit**,so we use `%d`.then we need to store the input in specefic variable.We can do this by `&inp`.
 Here we can print the the input.```printf("Your number is : %d",inp)```.Again we use `%d` to show we want digit(number) then use `,` and put the variable want to show.
@@ -41,7 +42,7 @@ Here we can print the the input.```printf("Your number is : %d",inp)```.Again we
 Lets create a project to get two number from user and return the **addition(+),subtraction(-),multiplication(x),division(/)**.
 Before dive into code,in C language we use `//` to write comment.comments are a useful tool to write some explanation about the code or just one line of the code.Remember compiler ignore all the comment,and don't run any thing that start with `//`.So be free to wirte the comment in your code.
 P.S. for multiplication instead of using letter `x` use `*`.
-```
+```C
 #include <stdio.h>
 
 int main()
