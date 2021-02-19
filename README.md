@@ -129,3 +129,7 @@ else if (condition 4){
 else{
 }
 ```
+
+## Appendix
+- [Type of error](https://www.javatpoint.com/programming-errors-in-c)
+- [Order of operation](https://en.wikipedia.org/wiki/Order_of_operations)
