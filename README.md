@@ -1,5 +1,4 @@
 # C-learning
-[go to appendix](##Appendix)
 
 Hi, I want to share my experien in learning **C language** as an Electrical Engineering.
 P.S. I'm not native English speaker so be ready for some
@@ -183,6 +182,37 @@ int main()
     return 0;
 }
 ```
+#### `for`
+When you know how many times you want to execute some part of the code it's better to use `for`.
+`for` is also a loop statement.Here is the syntax:
+```
+for ( init; condition; increment )
+{
+    the body of the for loop
+}
+```
+Let's do the above example again,but this time use `for` loop:
+```C
+#include <stdio.h>
+
+int main()
+{
+    int inp;
+    printf("Please enter the number : ");
+    scanf("%d",&inp);
+    int mul = 1;
+    for (int i = 1; i <= inp; i++)
+    {
+        mul *= i; // or mul = mul * i
+    }
+    printf("The answer is %d",mul);
+    return 0;
+}
+```
+> Which one is esier for you? `for` or `while` ?
+
+
+
 
 
 
