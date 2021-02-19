@@ -1,5 +1,7 @@
 # C-learning
-Hi, I want to share my experien in learning **C language**.
+[go to appendix](##Appendix)
+
+Hi, I want to share my experien in learning **C language** as an Electrical Engineering.
 P.S. I'm not native English speaker so be ready for some
 typo or bad grammer.
 
@@ -86,7 +88,7 @@ else
     body if the condition is False
 }
 ```
-**Recap : **the code inside the if only execute when the condition is True,otherwise the code inside the else execute.
+**Recap** : the code inside the if only execute when the condition is True,otherwise the code inside the else execute.
 
 E.g. Odd or Even this is a problem:
 ```C
@@ -98,7 +100,7 @@ int main()
     printf("Please enter a number : ");
     scanf("%d",&inp);
 
-    if (inp % 2 == 0){
+    if (inp % 2 == 0){ 
         printf("%d is even",inp);
     }
     else{
@@ -106,5 +108,24 @@ int main()
     }
 
     return 0;
+}
+```
+Did you see we use `==` in if condition.`=` is assignment operator that puts the right side value in the left side value and `==` is equality operator to check is the right side value equal to left side value,return True if equal.
+[more about relational operator](https://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B)
+
+Sometimes we need more than one condtion, then we use `else if`.Syntax
+```
+if (condition 1){
+}
+else if (condition 2){
+}
+else if (condition 3){
+}
+else if (condition 4){
+}
+.
+.
+.
+else{
 }
 ```
