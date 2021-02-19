@@ -28,3 +28,42 @@ we call **\\** as an **escape character**.You can find more examples in this [li
 **Don't forget to put `;` at the end of the line.We want to say that the programm runs successfully, so we `return 0`.`0` means program runs seccessfully.
 
 <img src="https://uupload.ir/files/gv2k_hello_world.png" alt="hello world" width="300"/>
+
+What about if we want to get input fromt user?`scanf` funcion is the solution.First we should define a variable.
+In this example we need an integer variable, so we use ```int inp;```.Here we define a variable called inp which is integer.
+Now lets get the user input.By using ```scanf("%d",&inp)``` you can get input from user.
+inside the `scanf` function you should put two value,first we need **digit**,so we use `%d`.then we need to store the input in specefic variable.We can do this by `&inp`.
+Here we can print the the input.```printf("Your number is : %d",inp)```.Again we use `%d` to show we want digit(number) then use `,` and put the variable want to show.
+
+<img src="https://uupload.ir/files/voy1_code.png" alt="scanf" width="300"/>
+<img src="https://uupload.ir/files/54dm_res.png" alt="scanf-res" width="300" height="140"/>
+
+Lets create a project to get two number from user and return the **addition(+),subtraction(-),multiplication(x),division(/)**.
+Before dive into code,in C language we use `//` to write comment.comments are a useful tool to write some explanation about the code or just one line of the code.Remember compiler ignore all the comment,and don't run any thing that start with `//`.So be free to wirte the comment in your code.
+P.S. for multiplication instead of using letter `x` use `*`
+```
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2;
+    printf("Please enter the first number : ");
+    scanf("%d",&num1);
+
+    printf("\nPlease enter the second number : ");
+    scanf("%d",&num2);
+
+    int addition = num1 + num2;
+    printf("\n%d + %d = %d",num1,num2,addition);
+
+    int subtraction = num1 - num2;
+    printf("\n%d - %d = %d",num1,num2,subtraction);
+
+    int multiplication = num1 * num2;//for multiplication use * (shift + 8)
+    printf("\n%d x %d = %d",num1,num2,multiplication);
+
+    int division = num1 / num2;
+    printf("\n%d / %d = %d",num1,num2,division);
+    return 0;
+}
+```
