@@ -211,6 +211,35 @@ int main()
 ```
 > Which one is esier for you? `for` or `while` ?
 
+#### `break` and `continue`
+In loop sitiution c has a powerful tool called `break` and `continue`.
+When we reach the `break` in code,the loop statement will finish even it has to repeat the code for several times.
+The other side,when we reach `continue`,the loop statement only pass this step and go to the next step in loop.The example below will help you to understand better.
+
+<img src="https://uupload.ir/files/wzyo_break.png" alt="break" />
+<img src="https://uupload.ir/files/wy2_continue.png" alt="continue" />
+
+Lets have another example that working like pow function (e.g. 2^3=8):
+```C
+#include <stdio.h>
+
+int main()
+{
+    int tavan,base;
+    printf("Please enter the base : ");
+    scanf("%d",&base);
+    printf("Please enter the tavan : ");
+    scanf("%d",&tavan);
+    int res = 1;
+    for (int i = 0; i < tavan; i++)
+    {
+        res *= base;
+    }
+    printf("The answer is : %d",res);
+    return 0;
+}
+```
+#### `switch`
 
 
 
@@ -219,3 +248,5 @@ int main()
 ## Appendix
 - [Type of error](https://www.javatpoint.com/programming-errors-in-c)
 - [Order of operation](https://en.wikipedia.org/wiki/Order_of_operations)
+
+# To be continue ...
