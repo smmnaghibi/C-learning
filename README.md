@@ -240,8 +240,79 @@ int main()
 }
 ```
 #### `switch`
+In C language, we also have `switch` function that is something like `if` and `else if` but is a simple way.
+Here is the syntax of the switch:
+```
+switch (variable or expression)
+{
+	case a:
+        expression;
+
+	case b:
+        expression;
+
+	default: // acting like else
+        expression;
+}
+```
+
+Lets create a project for 2020 USA Election with `switch`.
+The project will get the name and count them and finlly tell,who win.
+F.Y.I:You'll get familiar with another type of variable called `char` that is for character and how to get only one character from user with `getchar()` funcion.
+```C
+#include <stdio.h>
+
+int main()
+{
+    char name; // to store the name of the candidate
+    int nBiden = 0; // number of vote for Biden
+    int nTrump = 0; // number of vote for Trump
+    printf("Enter the name of the cadidate : (b or B for Biden and t or T for Trump and f or F for finish)\n");
+    while ((name = getchar()) != 'f' )
+    {
+        switch (name) {
+            case 'b': // both b and B are accepted for the input
+            case 'B':
+                nBiden++;
+                break;
+
+            case 't': // both t ang T are accepted for the input
+            case 'T':
+                nTrump++;
+                break;
+
+            case 'f': // both f and F are accepted
+            case 'F':
+                break;
+
+            default: // when the user inpute the wrong value that isn't expected
+                break;
+        }
+        printf("Enter the name of the cadidate : (b or B for Biden and t or T for Trump and f or F for finish)\n");
+    }
+    int total;
+    total = nTrump + nBiden; total vote
+    if (nBiden > nTrump)
+    {
+        printf("Biden wins with %.2f",((float )nBiden/total)*100);
+    }
+    else
+    {
+        printf("Trump wins with %.2f",((float)nTrump/total)*100);
+    }
 
 
+    return 0;
+}
+``` 
+#### `do while`
+`Do while` is another type of loop statement and it's actually like `while`.The only difference between `while` and `do while` is in `do while` first execute the code and then check the condition,so it Warranty that the code execute atlest one time,but in `while` first check the codition and then if the condition was True the code inside the `while` execute.
+Syntax of `do while`:
+```
+do{
+    expression;
+} while(condition);
+```
 
 
 
@@ -249,4 +320,4 @@ int main()
 - [Type of error](https://www.javatpoint.com/programming-errors-in-c)
 - [Order of operation](https://en.wikipedia.org/wiki/Order_of_operations)
 
-# To be continue ...
+# To be continue ...😀
