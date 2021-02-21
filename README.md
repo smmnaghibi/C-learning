@@ -45,7 +45,7 @@ Here we can print the the input.```printf("Your number is : %d",inp)```.Again we
 <img src="https://uupload.ir/files/54dm_res.png" alt="scanf-res" width="300"/>
 
 Lets create a project to get two number from user and return the **addition(+),subtraction(-),multiplication(x),division(/)**.
-Before dive into code,in C language we use `//` to write comment.comments are a useful tool to write some explanation about the code or just one line of the code.Remember compiler ignore all the comment,and don't run any thing that start with `//`.So be free to wirte the comment in your code.
+Before dive into code,in C language we use `//`  to comment just one line ane `/*  severl lines */` for commenting more than one line .comments are a useful tool to write some explanation about the code or just one line of the code.Remember compiler ignore all the comment,and don't run any thing that start with `//`.So be free to wirte the comment in your code.
 P.S. for multiplication instead of using letter `x` use `*`.
 ```C
 #include <stdio.h>
@@ -216,7 +216,10 @@ In loop sitiution c has a powerful tool called `break` and `continue`.
 When we reach the `break` in code,the loop statement will finish even it has to repeat the code for several times.
 The other side,when we reach `continue`,the loop statement only pass this step and go to the next step in loop.The example below will help you to understand better.
 
+`break`
 <img src="https://uupload.ir/files/wzyo_break.png" alt="break" />
+
+`continue`
 <img src="https://uupload.ir/files/wy2_continue.png" alt="continue" />
 
 Lets have another example that working like pow function (e.g. 2^3=8):
