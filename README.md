@@ -317,10 +317,126 @@ do{
 } while(condition);
 ```
 
+## `Funcition`
+`Function` is also the most imprtant part of the programming language, because it make the code **DRY** (Don't repeat yourself).You can write function and use it wherever you want in code.
+```
+int FunctionName(type and name of the input);
+OutputType FunctionName(type and name of the input)
+{
+    body of the function
+}
+```
+Here is the example to see if the number prime or not with `function` and `do while` .
+```C
+#include <stdio.h>
+#include <math.h>
+#define TRUE 1
+#define FALSE 0
+
+int IsPrime(int inp);
+
+int main()
+{
+    int inp;
+
+    do
+    {
+        printf("Enter an integer: ");
+        scanf("%d", &inp);
+        if(IsPrime(inp))
+        {
+            printf("%d is a PRIME number.\n",inp);
+        }
+        else
+        {
+            printf("%d is a NOT PRIME number.\n",inp);
+        }
+        printf("\n");
+    } while (inp>0);
+
+    return 0;
+}
+
+int IsPrime(int inp)
+{
+    int prime = TRUE;
+    int i;
+    for(i = 2; i <= sqrt(inp); i++)
+    {
+        if(inp % i == 0)
+        {
+            prime = FALSE;
+            break;
+        }
+    }
+
+    return prime;
+}
+```
+The below example will return the nth fibonacci number written with `function`.
+
+P.S. Fibonacci : 0,1,1,2,3,5,8,13,21,34,...
+```C
+#include <stdio.h>
+
+int Fibonacci(int n);
+
+int main()
+{
+    int n;
+    printf("Enter a number :");
+    scanf("%d",&n);
+    printf("%d",Fibonacci(n));
+    return 0;
+}
+
+int Fibonacci(int n)
+{
+    if (n == 0) return 0; // the first number is 0
+    if (n == 1) return 1; // the second number is 1
+
+    int a = 0;
+    int b = 1;
+    int c, i;
+
+    for (i = 2; i <= n; i++)
+    {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return c;
+}
+```
+Lets write the example above withe diffrent algorithm called `Recursion` .
+```C
+#include <stdio.h>
+
+int Fibonacci(int n);
+
+int main()
+{
+    int n;
+    printf("Enter a number :");
+    scanf("%d",&n);
+    printf("%d",Fibonacci(n));
+    return 0;
+}
+
+int Fibonacci(int n)
+{
+    if (n == 0) return 0; // the first number is 0
+    if (n == 1) return 1; // the second number is 1
+
+    return Fibonacci(n - 1) + Fibonacci(n - 2);
+}
+```
 
 
 ## Appendix
 - [Type of error](https://www.javatpoint.com/programming-errors-in-c)
 - [Order of operation](https://en.wikipedia.org/wiki/Order_of_operations)
+- [Programming Style](https://en.wikipedia.org/wiki/Programming_style)
+- [StringCaseStyle](https://stackoverflow.com/questions/17326185/what-are-the-different-kinds-of-cases)
 
 # To be continue ...😀
